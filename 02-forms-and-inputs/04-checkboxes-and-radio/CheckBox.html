@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Boxes</title>
+  </head>
+  <body>
+    <!-- utk checkbox mruakan input bertype check box jadi nuis emetnya 
+       input:checkbox 
+       utk checkbox ada label di atas utk for 
+       utk checkbox juga ada efault checked 
+       utk checkbox juga ada utk disabled 
+       utk checkbox juga bisa multiple atgribute pilihannya 
+       stlah tanda checkbox kita harus tulis utk tampilan uyg sinsya sama dgn Value kita!
+       PSOSOI INGAT INGAT ! 
+       <label> 
+           unput:checkbox
+       </lable>    
+       PERLU DIPERJHARIKAN UTK NAME DALAM CHECKBOK SAMA  HARUS SAMA 
+       AGAR DIA INDOVIDU PILIANYA BISA JUM CONTOH DIBAWAH iNI NAME MESTI = BELAJAR 
+       nah kalau mau pilih lebih dari 1 bisa di pakai dgn option mulptiple!
+    -->
+
+    <form action="/backend/form">
+      <h2>Pilihan belajar :</h2>
+      <label for="html">
+        <input type="checkbox" name="belajar" id="html" />HTML
+      </label>
+
+      <br />
+      <label for="css">
+        <input type="checkbox" name="belajar" id="css" />CSS
+      </label>
+
+      <br />
+      <label for="JavaScript">
+        <input type="checkbox" name="belajar" id="JavaScript" checked />
+        JAVASCRIPT
+      </label>
+
+      <br />
+      <label for="python">
+        <input type="checkbox" name="belajar" id="python" /> PYTHON
+      </label>
+
+      <br />
+      <label for="JavaSpringBoot">
+        <input type="checkbox" name="belajar" id="JavaSpringBoot" />
+        SPRINGBOOT
+      </label>
+
+      <br />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

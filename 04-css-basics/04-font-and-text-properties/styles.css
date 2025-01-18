@@ -1,0 +1,56 @@
+
+p {
+    font-size: 17px;
+    text-transform:capitalize;
+    letter-spacing: 2px; /*jarak tiap2 huruf abjad masing2 */
+    word-spacing: 5px;  /*  jaratk antar workd/kata*/
+    line-height: normal; 
+    text-align: center; /*atur posois tengah ,kanan ,kiri etc   */
+    /*buiasanya ini jarak antar tinggi huruf /baris line
+      kita pakai pengali dari nilai default font-size di html mis default 16px 
+      kit atinggal tulis line-height:1.2 
+      it 1.2x dari 16px 
+      lie height bisasanya di taruh pada body !atau paragrapf
+    */
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+yang diatur apa aja utk font yaitu 
+font-size: small,large,larger,smaller,x-large bisa kita pakai 16px dll
+font-weight:400,600,700 ( 700 setara dgn bold) 
+font-style:intalic atau normal 
+font-variant:normal,small-caps
+nah diatas bisa kita singkat dgn tulis
+font:italic small-caps 700 26px Arial 
+text-transform: capitalize  ( smu ahuruf besar diawal) 
+                lowercase  ( HRF kcil smua)
+                uppercase ( hrfBESaR smua)
+               
+text-decorator: ini utk garis di huruf garis bawah dot dll 
+daitaud aja kalau misalkan biasanya utk a link 
+kit ailangkan itu garis bawahnya pada link 
+dgn taruh selector  a {
+   text-decptator:none
+}
+
+
+
+*/

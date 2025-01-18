@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Sandbox</title>
+  </head>
+  <body>
+    <h1>HTML & CSS Sandbox - Select & Textarea</h1>
+    <!-- utk selectBox dia beda dgn checkBox dan radio buton 
+       utk selectBox dia itu bisa select lebih dari 1 options,dengan cara pada bagiab 
+       tag select kita beri kata multiple!
+       sedangkan yg lainya hanya 1 saja! 
+       dibawah ini contoh kita buat form ada lable ingat for lable hrs sama dgn nama id di select box!
+       krn ktika kita klik lable maka tomatis kesana itu cursor stay di dalam selectbox!
+       jadi select tag bungkus option ,dan 
+       utk pemanpakan misalnya option sampai 15 20 tapi kita mau liatkan 
+       option lis hanya 4 saja maka kita pakai atribute size="4"
+       -utk selected atribute guna default jika gak ada terpilih select otomatis pilih dari selected!
+        dibawah otomatis selevted pada mackbook3
+      -disabled juga ada sama sprti sblumnya jika disabled ya gak bisa ngisi input 
+      maka ktika tekan submit yg sampai dibrowser ya dari selected macbook3:
+      http://127.0.0.1:5500/latihan_brad/02-forms-and-inputs/03-select-and-textarea/index.html?product=mackbook3
+
+
+      ---ingat utk selection box itu stlah input adalah option2 
+---ingat utk radiobutton dan checkbox optionya dari input itu sndiri 
+   dng name yg SAMA! dan value yg beda! dan ingat input type disebutkan diawal
+   input:radio atau input:checkbox !! 
+-->
+
+    <h1>Tect Support</h1>
+    <form action="">
+      <div>
+        <label for="product">Product</label>
+        <br />
+        <!-- jika mau lebih dari 1 select kita kasih atribute kata :multiple -->
+        <select name="product" id="product" multiple size="4">
+          <option value="iphone" disabled>Iphone</option>
+          <option value="imac">Imac</option>
+          <option value="macbookpro">MacbookPro</option>
+          <option value="mackbook1">Mackbook1</option>
+          <option value="mackbook2">Mackbook2</option>
+          <option value="mackbook3" selected>Mackbook3</option>
+          <option value="mackbook4">Mackbook4</option>
+          <option value="mackbook5">Mackbook5</option>
+          <option value="mackbook6">Mackbook6</option>
+        </select>
+      </div>
+      <br />
+
+      <br />
+      <!-- utk text area ada row & col atribute ,row utk arah y dimana satuan sama,
+               tapi utk col = width dia dikalikan x10 ,mis raw=5,col = 50 ( 5x10) 
+               dan ingat kaalu baut component input pakem ada label dan nama id ahrsu sama dgn nama 
+               label dari input 
+            -->
+      <br />
+
+      <label for="message">Mesagge:</label>
+      <br />
+      <textarea
+        name="message"
+        id="message"
+        cols="15"
+        rows="20"
+        placeholder="your complain"
+      ></textarea>
+      <br />
+      <br />
+
+      <div>
+        <input type="submit" value="Enter Choice" />
+        <!--  
+          stlah kita ketik submit hasil dibrowser adalah:
+          http://127.0.0.1:5500/latihan_brad/02-forms-and-inputs/03-select-and-textarea/index.html?product=iphone&product=macbookpro
+          jadi BE akan baca itu berdasarkan name dari component dlm hal ini select name = product maka 
+          liat diatas: product=iphone&product=macbookpro 
+          diatas: ada memakai "&" sbgai penghubung!
+        -->
+      </div>
+    </form>
+  </body>
+</html>

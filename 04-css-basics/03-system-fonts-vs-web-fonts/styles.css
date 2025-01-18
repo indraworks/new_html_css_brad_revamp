@@ -1,0 +1,8 @@
+/* kita practikan dgn cara ambil Poppins font daro googles.font 
+  fonts.google.com kita pilih dgn cara embed link 
+*/
+
+body {
+    font-family: Poppins;
+    font-weight: bold;
+}

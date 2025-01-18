@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Sandbox</title>
+  </head>
+  <body>
+    <h1>HTML & CSS Sandbox - Datalist</h1>
+    <h2>general list select dgn datalist</h2>
+    <h3>semua datalist gunakan option :</h3>
+
+    <!-- general selection -->
+    <label for="favLanguage"></label>
+    <input
+      type="text"
+      list="myListlanguage"
+      id="favLanguage"
+      name="favLanguage"
+    />
+    <datalist id="myListlanguage">
+      <option value="PHP"></option>
+      <option value="Java"></option>
+      <option value="Python"></option>
+      <option value="Javascript"></option>
+      <option value="C#"></option>
+      <option value="C++"></option>
+      <option value="Ruby"></option>
+      <option value="Laravel"></option>
+    </datalist>
+    <input type="submit" value="Enter" />
+    <!-- jika Time sbgai data list -->
+    <br />
+    <br />
+    <!-- utk pakai datalist input wajib atribut list dan atribute (name="" id="") kita delete -->
+    <input type="time" list="mybussyTime" />
+    <datalist id="mybussyTime">
+      <option value="07:30"></option>
+      <option value="08:30"></option>
+      <option value="12:30"></option>
+      <option value="13:30"></option>
+      <option value="18:30"></option>
+      <option value="19:30"></option>
+    </datalist>
+
+    <!-- jika range sbgai data list -->
+    <input type="range" list="tickmarks" />
+    <datalist id="tickmarks">
+      <option value="0"></option>
+      <option value="10"></option>
+      <option value="20"></option>
+      <option value="30"></option>
+      <option value="40"></option>
+      <option value="50"></option>
+      <option value="60"></option>
+      <option value="70"></option>
+      <option value="80"></option>
+      <option value="90"></option>
+    </datalist>
+  </body>
+</html>
+<!-- untuk datalist akan selalu begini rumumus nya 
+   <label></label>
+   <input type:typeInputnya list="namaList"/> 
+   <datalist id="namaList">
+    <option value="namaValue1"></option>
+    <option value="namaValue2"></option>
+    <option value="namaValue3"></option>
+
+
+   </datalist>
+
+jadi akan sama sprti doiatas,jadi wajib nama List dari inout === id dari datalist
+jika tidak maka tak bisa!
+point 2 adalah :
+
+
+---ingat utk selection box itu stlah input adalah option2 
+---ingat utk radiobutton dan checkbox optionya dari input itu sndiri 
+   dng name yg SAMA! dan value yg beda! dan ingat input type disebutkan diawal
+   input:radio atau input:checkbox !! 
+    sluruh option diwarping sama input utk selectionbox
+    kalay yg radio dan check dia berdiri sendiri jadi input2 tapi nama input utk smuanya 
+    sama! 
+   -->

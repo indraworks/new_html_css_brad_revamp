@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Sandbox</title>
+  </head>
+  <body>
+    <h1>HTML & CSS Sandbox - Labels & Text Based Input Attributes</h1>
+
+    <form>
+      <div>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          value="Indra Suryawan"
+          placeholder="name"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="email" required />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="password" required />
+      </div>
+      <div>
+        <!-- <input type="submit" value="Submit" /> -->
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
+
+<!-- 
+input field atribut apa saja yg ada 
+placeholder ini sbnarna bisa gantikan label krn terlihat di inoutbox tulisan tipis 
+panduan agar kita isi apa input tsb  mis plcaholder="name"
+--name atribut ini diinput utk di berikan pada backend di browser supaya si be/nodejs/php 
+  bisa ambil name atau nama sifield tadi dan valuenya  nnti di browser terlihat sprti ini 
+  bila yg diatas di isi semua 
+
+--required   dipastikan memang wajib diisi jika tidak akan kluar error 
+--placeholder :pengganti dari 
+--disabled ini artinya input disable gak bisa dimasukin apa2!
+
+
+
+-->

@@ -1,0 +1,74 @@
+/* type selectore kita buat skrng class dan id  */
+
+/* h2 {
+    color:red;
+    font-size: 30px;
+}
+a {
+    text-decoration: none;
+    color:blue
+} */
+
+/* kit atarget class selector mau blue,red dan nrow masing sbb 
+   jika class kita taruh di div class= sporty dan karena di ada lah wraper 
+   maka smua h2,p,da a smua kena nah yg kit ataruh selector class ada pada h2 masing2 
+   jadi hanya h2 saja tiap2 masing2 dalam div itu saja yg kena gak smua nya  
+   larena element h2 bukan wraper sprti diatas ( pada html sila liat)
+*/
+
+/* class selector  */
+.sporty {
+    color:red;
+
+}
+.casual {
+    color:blue;
+
+}
+.formal {
+    color:brown;
+}
+
+/* #id selector  */
+/* makdsudnya jika widht layar 600px maka tulisan dalam wraper id 
+  selector smua ada ditengah dan padding 20 px (kedalam)
+*/
+#container {
+    max-width: 600px;
+    margin:100px auto;
+    padding:20px;
+}
+/* Multiple Style 
+kalau selector di kasih coma , selectorA, selectorB  brarrti  2 2 nya target  */
+.sporty,.casual {
+    font-size: 35px;
+    font-style: italic;
+}
+/* Descendand style disini kita mau smua p dibawah id #container kena!
+   nah yg diluar dari container ( gak diwraper oleh si #container gak kena
+   kalau descedand artinya yg kalang didalamya dia ,yg mana kita pakai spasi 
+   dibawah kita sasar p di bawahnya si id container
+*/
+#container p {
+  background-color: blue;
+}
+/* jadi ini yg p bawah diluar kalang #container dia gak kena karena bukan desenanda atau di
+bawah kalang id coitanienr! */
+p {
+    background-color: red;
+}
+/* kita bisa baut setting global lwat body atau html contoh di body 
+   karena body mrupakan tag kalang selector /parent paling tinggi 
+*/
+body {
+  font-family:Arial,Verdana, Geneva, Tahoma, sans-serif;
+  /* coba ksih border  */
+  border: 1px solid;
+}
+/* kalau html dia tak ada space dia /padding 
+kalau pakai body diinspect ada margin 8px ke dalam  baru garis border
+*/
+html {
+    /* ini murni dari tepi atas layar tak ada margin! */
+    border: 1px red solid;
+}

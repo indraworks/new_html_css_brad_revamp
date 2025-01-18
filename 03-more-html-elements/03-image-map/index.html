@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Sandbox</title>
+  </head>
+  <body>
+    <h1>HTML & CSS Sandbox - Image Map</h1>
+    <img src="./computer.jpg" usemap="#computermap" />
+    <map name="computermap">
+      <area
+        shape="rect"
+        coords="34,44,270,350"
+        href="./computer.html"
+        alt="Computer"
+      />
+    </map>
+  </body>
+</html>
+
+<!-- 
+jadi gini imageMap itu adalah utk tampilkan daerah yg mana bisa klik-able 
+ nah tag nya brupa image nnti ada namnya atribute usemap >
+ nah baru kita buat tag map dimana namanya sama dgn nama yg ada di usemap pada tag img! 
+
+
+
+
+ Measurement system: Pixels
+All values in the coords attribute are measured in pixels and are relative to the image itself, 
+starting from the top-left corner, which is (0, 0). For example, in your case, 34,44 means 34 pixels to the right and 44 pixels down from the top-left corner of the image.
+
+Other shapes for coords:
+rect: Requires 4 values, as in your example: x1, y1, x2, y2 (top-left and bottom-right).
+circle: Requires 3 values: x, y, radius, where x, y is the center of the circle, and radius is the radius in pixels.
+poly (polygon): Requires a series of x, y pairs to define multiple points t
+that create the shape (e.g., x1,y1,x2,y2,...).
+Let me know if you need more details!
+
+
+
+You said:
+so for coords where is position of 0,0 ? regarding this :coords="34,44,270,350":
+This defines the coordinates of the rectangle. The values represent the X, Y positions of the top-left and bottom-right corners of the rectangle, in pixels relative to the top-left corner of the image (0,0).
+34,44 is the top-left corner of the rectangle.
+270,350 is the bottom-right corner.
+ChatGPT said:
+ChatGPT
+In the context of an HTML image map, the position 
+(0,0) is located at the top-left corner of the image itself.
+ All coordinates specified in the coords attribute are relative to this point.
+
+Explanation of (0,0):
+Top-left corner of the image:
+The origin (0,0) is the top-left corner of the image.
+The x axis increases as you move right.
+The y axis increases as you move down.
+For your specific coords="34,44,270,350":
+34,44:
+
+The first pair of coordinates, 34,44, represents the top-left corner of the rectangle.
+It means the top-left corner of the rectangle is 34 pixels to the right and 44 pixels down from the top-left corner 
+of the image (the origin (0,0)).
+
+
+270,350:
+(270 garis x dari bottom-right --garisx dari sblah-kana bawah )
+(nah 350nya itu berasal dari tetap dari atas-kiri kotak )
+The second pair of coordinates, 270,350, represents the bottom-right corner of the rectangle.
+It means the bottom-right corner of the rectangle is 270 pixels to the right 
+and 350 pixels down from the top-left corner of the image (the origin (0,0)).
+
+Visualizing the placement:
+The top-left corner of the rectangle is located at pixel (34,44).
+The bottom-right corner of the rectangle is located at pixel (270,350).
+In simpler terms, the rectangle's clickable area starts at (34,44) and extends to (270,350), forming a box on the image from the defined top-left to bottom-right points.
+
+jadi kesim[ilan utk y-nya dia dari cornet atas kiri kebawah  22 nya sama 
+tapi utk yg pertama x1 dia dari top-kiri menuju kanan +x 
+utk x2 dia dari bottom-kanan ditarik kekiri -x ]
+-->

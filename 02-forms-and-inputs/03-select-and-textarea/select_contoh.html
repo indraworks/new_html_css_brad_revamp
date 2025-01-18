@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contoh select</title>
+  </head>
+  <body>
+    <form action="/backend/form">
+      <label for="myselect">select your choice:</label>
+      <br />
+      <select name="myselect" id="myselect" size="5" multiple>
+        <option value="ayam goreng saudi" disabled>ayam goreng saudi</option>
+        <option value="burger dog">burger dog</option>
+        <option value="ayam basah" selected>ayam basah</option>
+        <option value="ayam crispy">ayam crispy</option>
+        <!-- nilai value itu yg nnti ditangkap dari submit option 
+           utk tulisan diantara tag option itu tampilannya waktu kita  pilih 
+           kita juga ada default selected dia udah kepilih 
+           dan juga disabled suoaay gak dipilih  
+           utk size adalah yg ditampilkan berapa baris mis kita ada option 12 
+           kita tampilkan saja 3 misalnya jadi sixe ="3"
+           trus kita juga bisa pilih dgn multlipe atribute jua kita pasang multiplenya 
+           pada select diatas jadi lebih dari 1 pilihan bisa dipilih 
+        -->
+      </select>
+      <br />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

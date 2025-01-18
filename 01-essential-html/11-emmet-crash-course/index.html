@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Sandbox</title>
+  </head>
+  <body>
+    <h1>HTML & CSS Sandbox - Emmet Crash Course</h1>
+    <!-- p.text-xl  hasil:-->
+    <p class="text-xl"></p>
+    <!-- .text-xl  hasil hanyaclass dlm  div builtin -->
+    <div class="text-xl"></div>
+    <!-- # utk id  -->
+    <p id="main"></p>
+    <!-- #main.section-1.section2  hasil:  -->
+    <div id="main" class="section-1 section-2"></div>
+    <!-- mmbuat paragrap inside div 
+          div>p 
+       -->
+    <div>
+      <p></p>
+    </div>
+    <!-- paragrap inside id #about>p -->
+    <div id="about">
+      <p></p>
+    </div>
+    <!-- utk buat kalang pakai  > contoh div>p*3 buat 4 prgarf kalang  -->
+     <div>
+      <p></p>
+      <p></p>
+      <p></p>
+     </div>
+    <!-- utk tanda + itu adalah bersebelahan /tetanggaan tidak kalang -->
+
+    <div id="main-1"></div>
+    <p></p>
+    <!--  jima mau tulis list  kalang dan dalamnya juga ada item-1 item-2 dst maka 
+      p> ul>li*5 
+      ul>li{Item-$}*6  jika pakai tulisan Item-1 Item-2 dst ...
+    -->
+      <p>
+        <ul>
+          <li>Item-1</li>
+          <li>Item-2</li>
+          <li>Item-3</li>
+          <li>Item-4</li>
+        </ul>
+      </p>
+
+      <!-- ingat kalau + dia bersebelbelaha contoh .card+.card-2 ini 2 class yg bersebrangan -->
+     <div class="card"></div>
+     <card-2></card-2>
+     <!-- cotnoh footer berseberangan +  stlah div>header 
+       contoh: div>(header>ulli*2>a)+footer>p 
+     -->
+       <div>
+        <header>
+          <ul>
+            <li>Item-1<a href="#">www.google.com</a></li>
+            <li>Item-2<a href="#">www.amazon.com</a></li>
+            <li>Item-3<a href="#">www.kompas.com</a></li>
+          </ul>
+        </header>
+        <footer>
+          <p></p>
+        </footer>
+       </div>
+      <!-- utk p>lorem50  kita buat isi pragraf dgn 50 huruf acak darilorem50-->
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores adipisci 
+        nulla natus explicabo beatae accusantium sequi officia sunt tempora neque praesentium 
+        dolorem dignissimos corrupti ducimus, iure at vitae fugiat debitis exercitationem! Harum repellat 
+        delectus nihil modi quam placeat est excepturi in.
+         Architecto dolore obcaecati maxime illo voluptatem sapiente debitis fuga.</p>
+         <!-- utk a:mail -->
+          <a href="mailto:www.gmail.com"></a>
+          <!-- utk script script:src -->
+           <script src="./myjs.js"></script>
+    </body>
+</html>
+
+<!-- 
+
+utk emmet 
+. utk buatclass # ini utk buat id tanda cress 
+  #about.section = 
+
+
+-->

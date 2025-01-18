@@ -1,0 +1,107 @@
+.sporty {
+  color:  hsl(0,100%,50%);
+}
+/* saturasi buat dia jadi pudar  */
+.formal{
+    color:hsl(0,50%,50%);
+}
+
+.red {
+    color:hsl(0,100%,50%)
+}
+.orange {
+    color:hsl(30,100%,50%)
+}
+.yellow {
+    color:hsl(60,100%,50%)
+}
+
+.Yellow-green {
+ color:hsl(90,100%,50%)
+}
+.green {
+    color:hsl(120,100%,50%)
+}
+.green-cyan {
+    color:hsl(150,100%,50%)
+}
+.cyan {
+    color:hsl(180,100%,50%)
+}
+.blue-cyan {
+    color:hsl(210,100%,50%)
+}
+.blue {
+    color:hsl(240,100%,50%)
+}
+.blue-magenta {
+  color:hsl(270,100%,50%)
+}
+.magenta {
+    color:hsl(300,100%,50%)
+
+}
+.red-magenta {
+    color:hsl(330,100%,50%);
+
+}
+
+
+.card2 {
+    background: #000;
+    color:#fff;
+    opacity: 0.6;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+}
+/* bali ke red lagi nilai 360 atau 0! */
+
+/*
+Pure Colors (Full Saturation and Normal Lightness)
+css
+Copy code
+hsl(0, 100%, 50%)   /* Red 
+hsl(120, 100%, 50%) /* Green 
+hsl(240, 100%, 50%) /* Blue 
+Muted Colors (Low Saturation)
+css
+Copy code
+hsl(0, 30%, 50%)    /* Muted Red 
+hsl(120, 30%, 50%)  /* Muted Green 
+hsl(240, 30%, 50%)  /* Muted Blue 
+
+
+Tints (Lighter Colors)
+
+hsl(0, 100%, 70%)   /* Light Red (Pinkish) 
+hsl(120, 100%, 70%) /* Light Green 
+hsl(240, 100%, 70%) /* Light Blue 
+
+
+Shades (Darker Colors):
+
+hsl(0, 100%, 30%)   /* Dark Red 
+hsl(120, 100%, 30%) /* Dark Green 
+hsl(240, 100%, 30%) /* Dark Blue 
+How Incrementing Hue by 30 Works
+If you start at 0 (red) and increment by 30° 
+in the hue, you get a sequence of colors across the spectrum. Here's a sequence:
+
+hsl(0, 100%, 50%): Red
+hsl(30, 100%, 50%): Orange
+hsl(60, 100%, 50%): Yellow
+hsl(90, 100%, 50%): Yellow-green
+hsl(120, 100%, 50%): Green
+hsl(150, 100%, 50%): Green-cyan
+hsl(180, 100%, 50%): Cyan
+hsl(210, 100%, 50%): Blue-cyan
+hsl(240, 100%, 50%): Blue
+hsl(270, 100%, 50%): Blue-magenta
+hsl(300, 100%, 50%): Magenta
+hsl(330, 100%, 50%): Red-magenta
+hsl(360, 100%, 50%): Red (loop back to the start)
+
+
+
+
+*/

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Sandbox</title>
+    <style>
+      p {
+        background-color: #aaa;
+        padding: 1rem;
+        margin-bottom: 4rem;
+      }
+      a {
+        /*display: block; /* jika display block maka tetangga kebawah 1 orang 
+          occupied 1 line!
+        */
+        background-color: #eee;
+        padding: 1rem;
+        margin-right: 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML & CSS Sandbox - Block vs Inline</h1>
+    <!-- Block ELement -->
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <!-- inline element otomatis klau buat 2 maka mrka sblahan 
+       bisa jadi block jika di beri display:block 
+    -->
+    <a href="# goto x">link1</a>
+    <a href="# goto x">link2</a>
+    <!-- dibawah ini p akan tetap terkena format krn memang akan slu ikut style 
+        yg dikenakan jadi ada margin-botton 1rem dari atas /temannya si p 
+        itu jika si a di kenai display block 
+        kalau tidak ,maka si p dinbawah ini kena inline stlah si a 
+    -->
+    <p>hello lanjutkan ...</p>
+  </body>
+</html>
+<!-- 
+ inline elemant :
+ - hNY ocupied yg  dia butuhkan saja tidak 1 line 
+ - tidak start dgn new-line
+ -inline eleenemtn ujinjan inline lain bisa sama2 dalam  1 line tetangganan 
+ - tidak punya bottom dan top margin (karena dia tidak kuasai line )
+
+ block :
+ - dia kuasai 1 line baris 1 blok 
+ - dimula dgn new line 
+ - tak ijinkan lainya ada didalam block 
+ - punya margin top dan bottom 
+ kalau lkit apnggil block level element ya sama saja dgn element itu 
+ sendiri contoh <p> <h1> <li> etc ada contoh2nya 
+-->

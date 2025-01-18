@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Sandbox</title>
+  </head>
+  <body>
+    <h1>HTML & CSS Sandbox - Text Inputs</h1>
+    <form>
+      <!--  kita buat utk label dan input-text -->
+      <!--  kasi pemisah tipa label-input dngn lable-input lain dgn div 
+            agar ada jarak  
+            -->
+      <div>
+        <label for="name">Name</label>
+        <!-- emet input:text#name otomatis jadi dibawha -->
+        <input type="text" name="name" id="name" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <!-- utk button bisa kita pakai dgn atribut submit -->
+      <button type="submit">Enter</button>
+      <!-- kita bisa juga pakai component input tapi typesubmit,
+         value adalah textnya yg nnti mucnucl  
+      sbb: -->
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+
+<!-- 
+utk form kalau yg biasa didalamnya ada atribute action itu berisi tempat dimana 
+utk conect ke backend end-point misal : /api/olahinput
+misala <form action="/api/olah-input/inputController.php" method="POST"> 
+</form>
+nah utk form input kita ada namaya label sblumnya jadi biasanya jadi kesatuan 
+<label htmlfor=""(react) atay for=""(css)  id="input-name"/> id menunujuk pada cursor dimana 
+
+
+-->

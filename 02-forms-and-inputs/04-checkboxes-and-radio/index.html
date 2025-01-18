@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Sandbox</title>
+  </head>
+  <body>
+    <h1>HTML & CSS Sandbox - Checkboxes & Radio</h1>
+    <!-- 
+       utk checkbox dia bisa sama utk selection sperti sblumbya
+       bisa select lebih dari > 1 
+       KCUALI radiobyutton dia hanya 1 saja!
+       jadi dia checkbox diapit dulu dgn label yg ngarah kedia  
+       atribute disabled dan selected masih sama jika mau jadi default
+    -ingat kalau htrml smua harus ada dalam form utk input 
+     krn ada submiy yg bawa value2 yg ada dalam tag form! 
+     --jangan lupa tulisan nya agar terlihat sesudah input /> HTML 
+     misal diisi sesual value HTML tapi utk render dia tampak jika 
+     disi /> HTML ( tulisnaya) yg lain stlahnya ikuti saja apa isi value 
+     itu yg ditulis/dirender  contoh:
+     <label for="html">
+        <input type="checkbox" name="html" id="html" value="HTML" />HTML
+      </label>
+      <label for="javascript">
+        utk selected defautl maka di checkbok kita kenal dgn CHECKED ( huruf kecil)
+        utk radiobutton juga sama defaukt checked namanya !
+    -->
+    <h1>checkbox and Radio</h1>
+    <!-- name kalau pilihan harus sama karena topik yg sama !!! contoh choose language maka name language  
+     
+        ---ingat utk selection box itu stlah input adalah option2 
+---ingat utk radiobutton dan checkbox optionya dari input itu sndiri 
+   dng name yg SAMA! dan value yg beda! dan ingat input type disebutkan diawal
+   input:radio atau input:checkbox !! 
+    
+    
+    -->
+
+    <form>
+      <h2>Choose languange:</h2>
+      <label for="html">
+        <input type="checkbox" name="language" id="html" value="html" />HTML
+      </label>
+      <label for="css">
+        <input type="checkbox" name="language" id="css" value="css" />CSS
+      </label>
+      <label for="javascript">
+        <input
+          type="checkbox"
+          name="language"
+          id="javascript"
+          value="javascript"
+          checked
+        />JavaScript
+      </label>
+      <label for="python">
+        <input
+          type="checkbox"
+          name="language"
+          id="python"
+          value="python"
+        />PYTHON
+      </label>
+      <label for="c#">
+        <input type="checkbox" name="languange" id="c#" value="c#" disabled />C#
+      </label>
+    </form>
+    <br />
+    <br />
+    <h2>production Size</h2>
+    <h2>Product Size</h2>
+    <form>
+      <label for="small">
+        <input type="radio" name="size" id="small" value="small" />
+        Small
+      </label>
+      <label for="medium">
+        <input type="radio" name="size" id="medium" value="medium" checked />
+        Medium
+      </label>
+      <label for="large">
+        <input type="radio" name="size" id="large" value="large" />
+        Large
+      </label>
+    </form>
+    <br />
+    <br />
+    <form>
+      <h2>Pilihan ukuran:</h2>
+      <label for="kecil">
+        <input type="radio" name="size" id="kecil" value="small" />
+        Kecil
+      </label>
+      <label for="sedang">
+        <input type="radio" name="size" id="small" value="small" />
+        Sedang
+      </label>
+      <label for="besar">
+        <input type="radio" name="size" id="besar" value="besar" />
+        Besar
+      </label>
+      <label for="extra">
+        <input type="radio" name="size" id="extra" value="extra" disabled />
+        Extra
+      </label>
+    </form>
+  </body>
+</html>

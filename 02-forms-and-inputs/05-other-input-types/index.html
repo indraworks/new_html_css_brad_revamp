@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Sandbox</title>
+  </head>
+  <body>
+    <h1>HTML & CSS Sandbox - Other Input Types</h1>
+    <!-- inoput2 lain selain type :radio,checkbox,selected box 
+     adalah gtanggal ,warna,range,time,week,month,etc berikut sbb: -->
+    <h2>macam2 input selain :checkbox,radio,dan selected</h2>
+    <br />
+    <br />
+    <h3>input type color,date,time,week,month,Range</h3>
+    <form>
+      <label for="color"
+        >Color :
+        <input type="color" name="colors" id="color" />
+      </label>
+      <br />
+      <br />
+      <label for="date"
+        >Date : <input type="date" name="dates" id="date" />
+      </label>
+      <br />
+      <br />
+      <label for="time"
+        >Time : <input type="time" name="times" id="time" />
+      </label>
+      <br />
+      <label for="week"
+        >Week : <input type="week" name="weeks" id="week" />
+      </label>
+      <br />
+      <label for="month"
+        >Month : <input type="month" name="months" id="month" />
+      </label>
+
+      <!-- utk range bagaimana ada min,max dan step utk nilai valuenya ! -->
+      <div>
+        <label for="ranga">Range:</label>
+        <input
+          type="range"
+          name="range"
+          id="range"
+          min="0"
+          max="200"
+          step="10"
+        />
+      </div>
+      <!-- utk URL typenya url sbb: -->
+      <div>
+        <label for="url">Url</label>
+        <input type="url" name="url" id="url" />
+      </div>
+
+      <br />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
+
+<!-- hasil submit dirbowser:
+ http://127.0.0.1:5500/latihan_brad/02-forms-and-inputs/05-other-input-types/index.html?
+ colors=%23000000&
+ dates=2024-10-16&
+ times=10%3A21&
+ weeks=2024-W42&
+ months=2024-11 
+ 
+ -->

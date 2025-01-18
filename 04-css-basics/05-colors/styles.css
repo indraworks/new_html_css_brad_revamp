@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.sporty {
+  /* color:rgb(195, 12, 55) */
+  /* kalau rgb pakai hexa seperti ini tulisnya  */
+  /* color:#00AAFF */
+  color:rgb(255,0,255);
+}
+.casual {
+  color:darkblue;
+}
+ .formal:{
+   color:mediumblue;
+ }
+
+/*
+utk colors itu dari name mis red 
+darkred 9utk gelap merah)
+lightred utk cerah 
+mediumred utk tengah2  
+jad kata2 dark,light,medium ada didepan warna tsb kita coba 
+
+
+
+
+
+*/

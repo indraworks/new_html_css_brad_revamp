@@ -3,12 +3,52 @@ body {
 }
 
 
+/* kalau ada h1 atau element yg sama maka yg paling bawah yg pegang kendali/specifitcyty */
+h1 {
+  color:blue;
+}
+h1 {
+  color:red !important;
+}
+
+
+/* dari sini terlihat si id lebih spcificity/hirarki lebih tinggi dari class */
+
+#heading {
+  color:purple;
+}
+/* kemudian di html pada selector h1 kita beri style inline dia lah pemenang no.1
+utk specificty nya jadi warna jadi kuning sekarang!
+TAPI ADA LEBIH TINGGI YAITU !important tanda ini di css scecificty palign tinggi 
+maksa supaya dia yg atur selector  contoh diatas 
+
+utk ele,ent h1 {
+  color:red !important;
+}
+  maka otomatis layar utk h1 kembali merah dia aling tinggi 
+  tanda important stlah value dari selector itu ngasih force supaya css tunduk diataur oleh ini 
+  selector!
+
+  TAPI TIDAK DOSARANKAN PAKAI INI !important krn memaksa sifatnya!
+*/
+
+.heading {
+  color:green;
+}
+
+
+
+
+
+
+
 /*
 ururan2 pakingtinggi ubah dia selector protpery dari css ke hmtl 
 1 inline css pakay style="" diline ini paling tinggi 
 2 id#
 3.class 
-4.
+4.element 
+
 
 
 

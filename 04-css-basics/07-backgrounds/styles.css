@@ -10,6 +10,50 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0 20px;
+  /* setting background disini  */
+/* utk background color */
+/* background-color: coral; */
+
+/* utk background-image rulenya adalah url alamat dimana file gambar kita
+   path dirnya dgn url :
+  url jadi :background-image: url('./filejpg.jpg');;
+  background-repeat: no-repeat; 
+  //ket:biasanya mesti pakai no-repat default otomatis itu gambar jadi banyak 
+  //kalau no-repat gak dipakai
+  background-sixe:cover; //kita pakai cover saja utk amanya selimuti 
+                         //smua cover layar yg ada 
+                         //nosa pakai 200px atau bla bla px tapi tak aman !
+  background postion :center 
+  nah bisa jug apakai pixel tapi aray kanan kebawah default mis 
+  background position:200px 500px berarto kekanan 2000px ke bawah 500px 
+  kalau minus yg -200px artinkekiri dan -500px artinya keatas sbgas 500px ;  
+  utk singkat bisa ditulis sprti ini: 
+  background:url('./hero.jpg') no-repeat center/cover;
+  
+
+*/
+
+/* background-image: url('./hero.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center; 
+bisa ditulis 1 baris dgn spasi sbb:
+harus urut kalau tidak gak bisa !
+*/
+/* background: url('./hero.jpg') no-repeat center/cover; */
+
+
+/* Linear Gradient   ini utk gradient ini tanpa ada url atau image background
+  warna kita yg buat 
+  jadi arah pertama kata to ini bisa ke bottom ,right,atau left 
+  atau bisa campur misal ke bawah trus kekiri bottom left ,
+  dan ada 2 warna pemcampuran misal warna lightblue,darkblue misalkan 
+  terserah warnanya nnti itu warna awal ikut yg awal mis bottom yg left warna kedua 
+contoh :
+*/
+background: linear-gradient(to bottom right, darkblue, lightgreen);
+background: linear-gradient(to left bottom,rgb(13, 0, 128), magenta);
+
 }
 
 .hero h1 {
@@ -21,3 +65,14 @@ body {
   text-align: center;
   font-size: 2rem;
 }
+
+/*
+kita ngatur background yg ada imagenya gimana caranya ?? default gimana?
+jawab:
+
+
+
+
+
+
+*/

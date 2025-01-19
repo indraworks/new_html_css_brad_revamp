@@ -1,3 +1,64 @@
 body {
   font-family: Arial, sans-serif;
 }
+
+
+
+/*
+Utk LInk a :link yg Biasa digunakan itu ada 2 yaitu regular link 
+dimaka kasih warna dan text-decoration:nome 
+*/
+
+/* REUGULAR */
+a {
+  text-decoration: none;
+  color:darkblue;
+}
+
+/*
+2. a:hover yaitu mouse ita diatas link trus kiata apakan ini link biasa kasih warna 
+cotnoh a:hover {
+   color:red ;
+}
+*/
+
+a:hover{
+  color:red;
+}
+/*
+jarang dipakai yaitu active 
+a:active dimana waktu di hover dan diklik ini misalkan background link kita
+kasih warna purple 
+a:active {
+   background:purple 
+}
+*/
+a:active {
+  background: purple;
+}
+
+/*
+jarang dipakai yaitu: focus jadi waktu diclick stlahnya 
+maka dia akan mis kasih yelow nah kika click arah lain gak di a href tadi maka akan ilang 
+
+a:focus {
+background:yellow ;
+
+}
+*/
+a:focus {
+  background: yellow;
+}
+
+
+/*
+jarang dipakai kita pernah visidetd jadi mis tadi focus kita tinggal
+atau kita klik ke post.html kita ninggalin kita liat lagi dia akan berubah warna
+maka akan ada kita kasih tanda mis 
+a:visited {
+   color:blue;
+}
+*/
+a:visited {
+  color:darkgreen;
+}

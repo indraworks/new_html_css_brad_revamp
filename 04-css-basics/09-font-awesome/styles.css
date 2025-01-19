@@ -1,3 +1,46 @@
 body {
   font-family: Arial, sans-serif;
 }
+
+
+
+/* kita menggunakan font awesome 
+bentuk2 font2 atau tanda2 icon tapi ini bentuknya font 
+dan kita bisa download dan bisa guna cdn utk alamat cdnnya 
+berikut:cdnjs.com/libraries/font-awesome 
+nnti tinggal pilih versinya saja yg mana ,atau yg terbaru 
+kita bisa gunakan copy link tagnya ! taru di html bagian link atau style 
+diatas header kita 
+karekterisitik dari font awesome adalah dia gunakan  <i class="fa-namaicon-property fa-namaicon"><i>
+
+contoh <i class="fa-solid fa-check"></i> 
+ini utk checked icon dari font-awesome 
+nah tag2 utk iclass itu kita isikan di html kita  
+nah kalau ubah propertynya baru kita gunakan css yaitu besarnya misalkan atau warnanya ! 
+
+KALAU MAU NGEDIT DI CSSnya icon2 dari font-awesome 
+nama classnya yg dipakai adalah yg tertulis ada tanda garis mis fab fa-facebook 
+yg jadi propterty utk selectornya adalah fa-facebook!
+jadi fab gak ikut!! utk yg lainya sama!
+*/
+
+.fa-facebook {
+  color:blue;
+  font-size: 25px;
+
+}
+
+.fa-instagram {
+  color:magenta;
+  font-size: 40px;
+}
+.fa-linkedin {
+  color:darkblue;
+  font-size: 48px;
+
+}
+
+/* utk icon juga bisa di fontsizenya dibearkan lewat html tinggal
+ tambahkan property fa-2x ...fa-10x utk warna bisa dgn cara fa-red warna merah ini 
+ ditaruh di kanan setlah tag class misal i class="fas fa-check fa-2x>
+*/

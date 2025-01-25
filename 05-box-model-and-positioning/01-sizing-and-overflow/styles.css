@@ -1,3 +1,43 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+
+/*
+disni kita akan buat html terdiri atas class box box1 ,box box2,box box3 
+jadi content radi adalah dimulai dari div>h3 dan p adalah content utk box-model 
+
+
+*/
+.box {
+  background: blue;
+  color:#fff;
+  padding:20px;
+  border:3px solid green;
+  margin:20px;
+
+}
+
+.box1 {
+  width: 200px;
+  height:100px;
+  /* overflow:hiddlen; */
+  overflow-y:scroll
+}
+
+.box2 {
+  width: 50%;
+}
+.box2 p {
+  width: 50%;
+}
+
+.box3 {
+  /* max-width: 800px; */
+  min-width: 600px;
+  /* artinya minimum width adalah jika kita buat lebar dari page html itu  < 600px maka dia tidak ikuti layar dia akan tertutup sisanya 
+   jiak layar lebih >600 px maka masih terliaht besar/lebar box3  masih ada warna2 putih yg mana itu tanda lebarnya masih lebih kecil dari layar 
+   nah stlah < 600px maka si box3 tetap bertahan di 600px padahal layar sudah mis 550px maka gambar dari box3 terpotong!
+   SUPAYA UTK SELALU LAYOTU KITA ATAU boxmodel KITA ADAPTED PADA LAYAR PAGE MAKA HARUS KITA GUNAKANA MAX-WIDTH porpetty !!
+   ITU WAJIB JADI KALAU NNTI UKURAN LEBAR HP ,ATAU PAD MAKA DIA AKAN IKUTI LAYAR DGN PROPERTY MAX-WIDTH 
+  */
+}

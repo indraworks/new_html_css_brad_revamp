@@ -1,3 +1,58 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+/* utk margin itu darang dari H1 
+  dari atas ,dan h3 tiap2 yg ada di box -box$ masing2 itu ada space putih itu margin yg 
+  kluar dari h3! jadi utk box sndiri blum ada margin!
+kita belum isi margin cuman backgroudn aja coral 
+ terlihart space antar box 
+*/
+
+/*
+knpaa warnanya putih diatas saja karena warna coral itu mlupti pada div box 
+jadi warna putih itu margin jika element udah ada atau pemisah dari div sblumnya!
+nah utk h3 ke p itu warnanya tetap coral memang ada jarak tapi warnanya udah coral 
+jadi warna putih yg ada adalah dari margin top h3  tiap2 box-1,box-2,box-3 
+
+nah utk set margin jadi reset kita buat nol !sbb
+
+*/
+/*  h3,p  kita buat margin nol jadi sekarang smua menyatu! dl warna coral */
+h3,p {
+  margin:0
+}
+
+.box {
+  background: coral;
+  /* nah box ada margin itu misahkan box1,box2,box3 dari div ada jarak masing2 */
+  max-width: 400px;
+  margin:20px; /*   ini kasih ada pemisah antar element luar yaitu dari box-box1,box-box2,box-box-3 
+  ada pemisah */
+
+  /* buat misah p,box-*, masing2 ada jarak cntent tulisan dari bordernya sebanyak 20px  */
+  padding:20px;
+  border:1px solid black;
+  
+}
+
+.box-2 {
+  margin-top: 20px;
+  margin-right: 30px;
+  margin-bottom: 40px;
+  margin-left: 50px;
+}
+
+/* T-R-B-L atau trouble utk ingat2 */
+.box-2 {
+  margin:20px 30px 40px 50px;
+}
+
+/* nah jika kita mau axisnya misal sbuah container (box-model trserah besarannya berapa 
+   kita mau dia ada di tengah layar sbuah page maka kita bisa beri  pada axis utk margin berupa auto 
+   ingat utk 2 property margin:T-B R-L 
+   nah utk R-L /axis yaitu right left kita buat auto kita cobakan pada box-1 
+*/
+
+.box-1 {
+  margin:20px auto;
+}

@@ -6,9 +6,37 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+/* kita kasih  universal  selector */
+/* * {
+  border:red solid 5px
+} */
+
+/* nah kita reset ini dengan universal selector jadi 0 smua utk 
+padding dan margin  border kita reset
+kalau ada yg tambahan gak lazim font-family :inherit
+tapi 3 aja sudah cukup mewakili 
+*/
+* {
+  margin:0;
+  padding: 0;
+  border:0;
+  /*  yg ini penting utk default border-box dimana itungan sudah include dari border dan padding 
+      jadi asli itu itungan dari besar/width contentnya saja
+      kala content-box maka itungan = content+ width padding+width border
+      jadi kalau kita mau reset itunga2nya adalah pilih yg default adalah border-box  
+      sbb misal .box max-width adalah 400px itu udah termasuk width dari padding dan border 
+      jadi mis padding 20px berarti content = 380px! 
+
+  */
+  box-sizing: border-box;
+  /* font-family: inherit; */
+}
+
+
 .box {
   background: coral;
   max-width: 400px;
+  /* kita buat gak ada ini jadi benar2 smua skearang natyu sama body */
   margin: 20px;
   padding: 20px;
 }

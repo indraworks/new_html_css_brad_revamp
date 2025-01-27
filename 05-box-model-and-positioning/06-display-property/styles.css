@@ -1,3 +1,66 @@
 body {
   font-family: Arial, sans-serif;
 }
+
+/* 
+utk maslaah display agar tak terlihat ada 2 
+-display none ini smua property ilang dan juga dia tak terliat di 
+page html  (JADI CONTENT DAN PROPERTY BENAR2 ILANG) 
+
+ini bukan display maaf  TAPI visibilty:hidden 
+- Visibility: hidden ini property tidak ilang masih ada bekasnya 
+   mis sprti jarak margin tapi CONTENTNYA YG DIHIDEN !
+
+*/
+
+/* .none-el {
+  display: none;
+
+} */
+
+.hidden-el {
+  visibility: hidden;
+}
+
+/* display inline adalah sama2 1 line  bagaimana pun besar kecilnya page tetap merka 
+   sama2 dalam 1 line! beda dgn inline block jika page lebih kecil dari besaran eleemnt
+   maka ELEMENT WAJIB PINDAH BARIS 
+   misa element a:link dispalaynya adalah inline-bloik ,nah ada 2 a:link
+   maka jika 2 2nya a:link widhtnya leboh dari page saat itu maka salah 1 akan pindah baris 
+   jadi  display block! 
+
+*/
+p {
+  display: block;
+}
+
+/* sekarang kit abuat Link nah ini  dia kalau set widht dan height dia 
+   gak akan pernah bisa karena memang utk default  block itu mesti nisa 
+   tapi utk a link kita harus taruh display :block  
+   baru tampak tinggi dan hegiht itu baru bisa  
+   nah disini kita buat inline-block nah dari besaran page kalau dia lebih kecil 
+   dari 2 a link ini ( lebarnya ) maka salah sati kotak tsb akan berada di bawah 
+   yg lain 
+   kalau block otomatis dia 1 line sampai habis occupied  jadi gak ada space utk element lain 
+   itu bedanya dgn inline-block yg mana inline masih bersama2 1 line asal besarnya 
+   tidak >- dari besar page saat itu 
+
+*/
+
+a {
+  display: inline-block;
+  background:lightblue;
+  border:blue solid 1px;
+  padding:10px;
+  margin:20px 10px;
+ width: 300px;
+  height: 100px;
+  /* width dan highrt gak akan effect pada layar tetap aja gak berubah 
+  baru stlah dibuat display:block maka tampak berubah ,inipenyakit kalau pakai a:link 
+  metinya harusnya langsung bisa karena default di hmtl-css adalah block!
+  */
+}
+
+
+
+

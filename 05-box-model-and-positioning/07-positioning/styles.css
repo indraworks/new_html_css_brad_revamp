@@ -1,3 +1,111 @@
 body {
   font-family: Arial, sans-serif;
 }
+
+
+.box {
+  height:200px;
+  width: 200px;
+  display: flex;
+  background: lightblue;
+  margin:10px;
+  /* text-align: center; */
+  /* kalau flex supaya center contentnya yg di adjust */
+  justify-content: center; /* horisontal -center  */
+  align-items: center; /* vertikal center  */
+  border:1px solid black;
+}
+
+/* static box-1 :ini dia gak bisa dmove kemana2 kalau static */
+.box-1 {
+  position: static;
+  left:30px;/*  gak ada move*/
+}
+
+/* position relative dia natural diatas page html bisa move kmana2 */
+.box-2 {
+  position: relative;
+  left: 30px; /* krn relatif dari kiri 30px maksudnya kekanan   */
+  bottom: 30px; /* krm relative dari bawah maksudnya keatas 30px   */
+  /* jika dia pindah dia ada diatas box yg ditimpa  
+    disini jika left 30 dia gerak kekkanan spanjang 30px meninggalkan left 
+    
+  
+    */
+}
+
+/* posisi fixed utk box-3 dia stay disana gak gerak2 dia fixed berati 
+  layer ada diatas layer page
+ terlihat posisnya sekarang  gak ada dilayar page tapi dia 
+ berada DIATAS LAYER PAGE DGN POSISI SAMA SEHINGGA si box-4 Sticky naik posisi
+ karena propertynya si FIxed ( box-3) ilang dan berada dilayer depan
+ /diatas layer pag dan sticky adan yg dibawah2 (box2 dibawahnya ikut naik)
+ jadilah posisi box-3 ada diatas box-4 
+ tepat didepanya box-4(sticky) 
+ jadi intinya dia dianggap oleh yg lainya tak berada di page tsb sudah ilang propertynya 
+ dan berada di layer depan
+*/
+.box-3 {
+  position: fixed;
+  top:0;
+  right:0
+}
+
+/* kita buat di html <p>lorem 300, dibawah section utk check apa efect fixed ini 
+nah terlihat waktu kita geser keatas kebawah layer page si box-3 tetap
+diposisi dia tadi tapi ada dddepan layer tsb ,jadi kalau discroll atas-bawah 
+terlihat yg lain bergerak atas bawah,pas kebawah /ketas yg bergerak adalah layer page dibekang
+si box-3 !
+
+kita juga bisa atur posis fix
+dgn taruh top bottom left right 
+mis saya mau taruh top:0 right:0 
+berarti dia ada di posisi 0,0 ( atas kanan) pada diatas layer page!fixed disitu 
+sampai kapanpun jika tak diubah!
+*/
+
+/* STICKY pada box-4 mrupakan combinasi antara fixed dan relative 
+    jaid misal kita pasang top:200px 
+    berarti si box-4 berada di bawah 200px relative thdp top 
+    nah misalkan kita keatas kan dia akan mentok dia akan berada 200px dibawah layer top/batas atas
+    KETIKA LAYER DIGESER KEATAS dan POSISI box 200px dari atas DIA STICK atau dia Fixed ,
+    DAN KETIKA LAYER TRUS DIGESER MELEBIHI  BESAR ELEMENYNYA DIA DIA AKAN IKUT GERAK KEATAS STLAHNYA! 
+*/
+.box-4 {
+  position: sticky;
+  top:200px;
+  z-index: 1;
+}
+
+/*
+PENTING! JIAK ADA SBUAH BOX (contoh box-6 ADA dIDALAM  DAN position :absolute dan  box-5 (sbgai contaioner) MAKA BOX -5 SBGAI CONTAINERNYA 
+DIA HARUS POSITION :RELATIVE 
+jadi itu syaratnya jika si anak absolute dalam container ,maka si container wajib psisi relative!! kalau tidak relative maka gak akan bisa 
+NAH si anak (box-6) dia gerak position abolute ,relative thdp si container!!! dia ada dalam container aja itu arah2 positionya si box-6 
+bukan tdh element2 yg lain ,hanya pada INDUKNYA! 
+
+
+*/
+.box-5 {
+  position: relative;
+  background: coral;
+  width: 600px;
+  height: 600px;
+}
+
+.box-6 {
+  position: absolute;
+  top:10px; /*posisinya 10px dari atas  */
+  right:10px; /*posisinya 10px dari kanan   */
+}
+
+/*
+Z-index 
+ini ngatur posisi siapa yamg paling depan diatas layer page ! 
+nah z-index bekerja pada posisiotn apapun KECUALI fixed postion 
+misalkan diatas posisi si box-4 kan dibawah dari box5 maka kita bisa gunakan z-index yg mana ini 
+utk atur mana yg paling tinggi layernya /paling diatas ! z-index:1 
+karena yg lain blum ada z indexnya maka box 4 jaid paling tinggi !
+
+
+*/

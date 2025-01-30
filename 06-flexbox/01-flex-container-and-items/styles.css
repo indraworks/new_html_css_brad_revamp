@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* 
+key dari flex-box adalah adalnya container 
+yg mengarahkan susuan si item2 anak2 didalamnya 
+nah utk pertama kali dia harus diset dulu ruang container yg berisi 
+amak2 kita buat ada 4 anak /item box 
+nah harus di set sbgai display :flex 
+nah flex-flownya adalah row utk default dari jadi posisi dari kiri kekanan 
+nah kita beri dia main sbgaoi flex-axis ( sumbu x yg arah horisontal 
+nah utk verticalnya sbgai arah flex-cross-axis 
+nah pada saat kita set dia flex-flow:column arah y ,
+maka arah sumbu y nya disebti flex-axis atau utama ,
+dan arah x-nya disebut 
+nah content2 tadi yg berisi 4 item box tadi kita  bisa adjust atur bebelah kri kanan tenganh 
+jika dia berada di flex axis baik di snumbu y atau x ,maka dia kita set dgn justify-content 
+
+jika flex-flow:row ,justify-content arah kiri kanann 
+jika flwx-flow:column  justify-content seting arah atas bawah 
+
+demikian juga utk set corss axis pada content item2 tsb arah tegak lurusnya 
+jika dia flex-flow:row ,maka arah tegak lurusnya atas-bawah diset align-itemns nya!
+jika dia flex-flow:column ,maka arah tegak lurusnya dalah kiri kanan set align-itemns nya !
+
+nah utk arange dia di flex-axis /horisonal
+
+*/
+.flex-container {
+  display:flex;
+  width: 500px;
+  height: 200px;
+  background: coral;
+  gap:10px;
+  justify-content: center;
+  
+}
+.box {
+  height: 80px;
+  width: 80px;
+  background:lightblue;
+  
+  border: 1px black solid;
+}

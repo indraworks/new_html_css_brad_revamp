@@ -8,3 +8,69 @@ body {
   font-family: 'Poppins', sans-serif;
   background: #f4f4f4;
 }
+
+* {
+  margin:0;
+  padding:0;
+  border:0;
+  box-sizing: border-box;
+}
+
+/* utk container ini yg kita buat width 400px 
+   margin:top-botom right-left 
+   margin:100px auto ( utk tengah horizontal 
+ 
+*/
+.container {
+  width: 400px;
+  margin:100px auto;
+ 
+  
+
+}
+.card {
+  background: #000;
+  color:#fff;
+  border-radius: 4px;
+  padding:60px 50px;
+  text-align: center;
+  box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+
+}
+.card h1 {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 15px;
+  font-weight: large;
+  margin-bottom: 10px;
+}
+.card .form-group {
+  margin-bottom: 10px;
+}
+.card input[type="text"] {
+   width: 100%;
+   padding:15px 10px;
+   font-size: large;
+   border:none;
+   background-color: #f1f1f1;
+}
+.card button {
+  border:none;
+  width: 100%;
+  padding:15px 10px;
+  color:#f1f1f1;
+  /* kita gunakan css gradient   alamat :https://cssgradient.io/*/
+  cursor:pointer ; /* saat di hover bentuk cursor tangan tlunjuk  */
+  background: rgb(232,123,75);
+  background: linear-gradient(90deg, rgba(232,123,75,1) 0%, rgba(226,135,34,1) 15%, rgba(242,132,62,1) 46%);
+} 
+
+.card button:hover {
+
+  background: rgb(232,123,75);
+  background: linear-gradient(90deg, rgb(180, 110, 80) 0%, rgb(146, 108, 64) 15%, rgb(230, 152, 104) 46%);
+}

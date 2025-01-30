@@ -1,0 +1,72 @@
+/*kita reset pagenya /propertynya  */
+* {
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+
+
+}
+
+body {
+    line-height: 1.6;
+    font-family: 'Poppins';
+
+}
+
+.header {
+    font-size: 32px;
+    background: coral;
+    padding:20px;
+    
+}
+ul {
+    list-style-type:none;
+}
+
+a {
+    text-decoration: none;
+    color:#333;
+}
+a:hover {
+    color:coral
+}
+.main-menu {
+    display: flex;
+    background: #f3f3f3;
+    color:grey;
+    gap:10px;
+    align-items: center;
+    padding:20px;
+
+}
+
+
+
+.main {
+    margin:25px 15px;
+    display: flex;
+    gap:35px;
+}
+.main section {
+    flex:2;
+}
+.main aside {
+    flex:1;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+aside li {
+    height: 40px;
+    background: #f3f3f3;
+    border-bottom: #d6cbcb solid 1px;
+    align-items: center;
+    padding: 5px 10px;
+    color:grey
+}
+aside h3 {
+    background: coral;
+    color:#fff;
+    padding:10px;
+}

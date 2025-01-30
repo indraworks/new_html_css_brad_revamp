@@ -1,0 +1,187 @@
+
+* {
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body {
+   font-family: 'Monserrat',sans-serif;
+   line-height: 1.6;
+   font-weight: 600;/* tebal  */
+   background: #27264b;
+   color:#433f63;
+}
+
+a {
+    text-decoration: none;
+    color:#007bff;
+}
+ul {
+    list-style: none;
+}
+li {
+    margin-bottom: 10px;
+}
+/* container ini layar full yg wraping items dan item-price,item-pro,item-ultimate */
+.container {
+     max-width: 1100px; /*  ini besaran kiri-kanan yg commons pada website*/
+     background: #f8fafe;
+     border-radius: 10px;
+     margin:0 auto;/*layar 1100 ada ditengah! page    */
+     margin-top: 150px;
+     padding: 70px 60px;
+}
+/* pricing adalah container utk 3 card kita sebut jamaknya card 
+   dan utk self/tiap2 card individe namanya :
+   -card-free 
+   -card-pro
+   -card-ultimate 
+   jadi card itu macam item 
+   dan utk card-free dkk macam item-1 dst 
+   makanya card card-free ...itu identik dgn item item-1 ..class dst ..
+   utk pricing dia wraping card card-free dkk makany adia adalah container card 
+   ini yg basic yg emsti kita tahu! kit abuat flex disini di pricing class! 
+*/
+
+/* pricing analoginya adalah item-container! */
+.pricing {
+    display: flex;
+    justify-content: space-around;
+    gap:30px;
+    flex-wrap: wrap; /* kalau nnti  layarmengecil dia(item) bisa kebawah!  
+      nah saat besar itu kan kebwah tetap makanya utk pada item atau disni adalah card
+      maka kita buat masing2 dgn flex:1 yg mana punya kesaaman relative sama ktika grow !
+    */
+}
+/* card ini mewakili classitem pada  class item item-* pada contoh utama kita itu analoginya  */
+.card {
+   flex:1; /* mmpunyai relasi yg sama ktika grow utk smua iyem-1,item-2 dst   */
+   background-color: #fff;
+   border-radius: 8px;
+   padding: 20px;
+   /* utk box hsadow  x utk botom tak pakai ,kita gunakan yg y vertikal 4pxsaja 
+   dan blur 6px dan spread =0
+      warna yg dipakai hitam transparan 0.1
+   */
+   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+   text-align: center;
+   margin-bottom: 20px;
+}
+/* 
+utk h2 header dalam card memang masing 2 card terutama yg pro dan ultimate beda ada 
+gradientnya nanh utk pertama kita buat sama dulu default h2 nya terutama utk yg free
+utk yg default nnti dibuat sama baru nnti ke .card-pro dan card-utimate h2 nya kit aberi masing2
+sesuai gradientnya sesuai gambar! 
+*/
+
+.card h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding: 15px;
+    color:#333;
+    background: #f8fafe;
+}
+
+/* nah baru yg sekarang masing2 h2 pada card-pro dan card ultimate kit aberi tambahan gradient 
+pada backroundnya 
+*/
+.card-pro h2 {
+    background: linear-gradient(
+        90deg,
+        rgba(194,227,255,1) 13%,
+        rgba(180,118,254,1)100%
+    );
+    color:#fff
+
+}
+
+.card-enterprise h2 {
+    background: linear-gradient(
+        90deg,
+        rgb(212, 118, 41)13%,
+        rgb(231, 54, 22) 100%
+       
+    );
+    color:#fff
+}
+/*RUMURS 2 WARNA LINEAR 
+kalau rumusnya model diatas  x deg,rgba() x%,rgba2() y%
+maka : 
+90 degree ==> 
+    • 90deg means the gradient flows from left to right.
+ 180 :180deg means the gradient moves top to bottom. 
+
+ 45 deg :ini diagonal dari top-left to bottom-right  
+         45deg moves from top-left to bottom-right.
+
+
+*/
+
+/* 
+ RUMSU 1 WARNA :
+ Angle
+Gradient Direction
+0deg :Left → Right
+90deg:Bottom → Top
+
+180deg: Right → Left
+270deg : Top → Bottom
+45deg: Top-left → Bottom-right (INI SAMA DGN 2 WARNA)
+
+135deg:Bottom-left → Top-right (INI SAMA DGN 2 WARNA )
+
+*/
+
+/* nilai price kit abesarkan  */
+.card .price {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.card .price sup {
+    font-size: 18px;
+    position: relative;
+    left:-8px
+}
+
+.card .price span {
+    font-size: 18px;
+    position: relative;
+    right:-5px
+}
+.card .main-text {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+/*
+utk tulisan pricing kita besarkan 
+kmudian yg karakter sup nya kita buat besar dan buat relative dan beri nilai -5px 
+dimana kita buat lebih kekiri sedikti 
+
+*/
+.btn {
+    font-size: 18px;
+    display: block;
+    background-color: #fff;
+    color:#27264b;
+    border: 1px solid #27264b;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+
+}
+.btn-primary,
+.btn:hover {
+    
+    background-color:#27264b;
+    color:#fff;
+}
+.btn-primary:hover {
+     background-color: #fff;
+     color:#27264b;
+}

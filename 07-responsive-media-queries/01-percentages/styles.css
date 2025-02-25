@@ -7,3 +7,19 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+
+.container {
+  /* jadi dgn adanya max-widht akan selalu responsive! 
+  nah tapi secara defacto kita bisa buat dg cara 
+  memakai percetange dari max halaman contoh 
+  kita ganti max-width:1100px dgn percentage 
+  misal besar maximal element akan selalu 80% dari max halaman
+  max-width:'80%'
+  */
+  /* max-width: 1100px; */
+  /* utk supaya tetap kiri kanan sama besar pakai auto  */
+  max-width: 85%; /* ini artinya 85% dari besar halaman!  */
+  margin:50px auto;
+  padding:20px;
+
+}

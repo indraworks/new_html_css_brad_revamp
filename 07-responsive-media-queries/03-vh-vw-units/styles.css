@@ -10,18 +10,24 @@ body {
 
 .container {
   background: coral;
-  height: 100vh;/*   
+  height: 100vh;
+  /* height: 100%; */
+  /* kalau pkai 100% maka hanya sampai tinggi content itu saja! yaitu class container  */
+  /*   
    srtinya:ini tinggi 50% dari tinggi layar
    nah arah dari top ->ke bottom
   */
    /* width:50vw; */
    /* utk lebaradari atas ke bawah hanya 50 persen saja  */
 }
-/* .container h1 {
+.container h1 {
   font-size: 7vw;
-} */
-.container p {
-  font-size: 4vw;
 }
-/* demikian juga utk  p bisa dibuat vw misalkan font-size:4w */
+.container p {
+  font-size: 5vw;
+}
+/* demikian juga utk  p bisa dibuat vw misalkan font-size:4w 
+jadi kita bisa buat ukuran font pakai vw atay vh selain px ,atau rem 
+
+*/
 

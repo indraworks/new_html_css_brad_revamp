@@ -7,3 +7,66 @@
 body {
   font-family: Arial, sans-serif;
 }
+
+
+/* kita coba dengan  mulai dari desktop jadi jika sblum 
+
+576px smarthpone
+768px tablets
+992px desktop
+1024px landscape 
+1200px desktop
+
+
+*/
+/* jadi sblum sampai 1200px warna boleh hijau,setelha lebarscreen  1200px keatas  maka warna hijau hilang */
+.widescreen {
+  @media screen and (max-width:1200px) {
+    background-color: green;
+  }
+}
+
+/* jadi sblum sampai 768px warna boleh hijau,setelha lebarscreen  992 px keatas  maka warna hijau hilang */
+
+.normal {
+  @media screen and (max-width:992px) {
+       background-color: coral;
+  }
+}
+
+/* jadi sblum sampai 768px warna boleh hijau,setelha lebarscreen  768 px keatas  maka warna hijau hilang */
+.tablet {
+  @media screen and (max-width:768px) {
+      background-color: lightblue;
+  }
+}
+
+/* jadi sblum sampai 576px warna boleh hijau,setelha lebarscreen  768 px keatas  maka warna hijau hilang */
+.smartphone {
+  @media screen and (max-width:576px) {
+    background-color: pink;
+  }
+
+}
+
+/* ini jika pisis handphoen dibuat landscape arah phone kita belokan 180 deraja 
+maka kita set styleing berubah ,
+disini kita set background layar biru tua 
+maka kaliamtnya adala @media (orientation:landscpae
+nah kita bisa tambahin dibawah misalkan itu yg diputar derajatnya 
+adalah smarthope maka tinggal tambah "and (max-width:575px)
+*/
+
+@media (orientation:landscape) {
+  .landscape {
+    background-color: greenyellow;
+  }
+}
+
+@media (orientation:landscape) and (max-width:576px){
+  .landscape {
+    background-color: red
+  }
+}
+
+/* kita juga bisa melakukan multipe queries  */

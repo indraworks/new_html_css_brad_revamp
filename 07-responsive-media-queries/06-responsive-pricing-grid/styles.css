@@ -149,3 +149,25 @@ li {
   color: #98ca9e;
   margin-right: 10px;
 }
+
+/* 
+
+kit aakan gunaka media queris akan slalu kita mualai dgn max-width dari desktop
+nah waktu mengwxil nnti kita buat dia orientasi dari flex yg awal mula row menjadi column 
+bisa dgn block tapi jangan karena kita sudah flex!
+
+*/
+
+@media screen and (max-width:768px) {
+  .pricing {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:576px) {
+  .container {
+    padding:60px 40px;
+    margin:70px 40px 70px;
+  }
+  
+}
+

@@ -77,4 +77,51 @@ nah yg container yg row jadi cloumn jika nnt sentuh patokan misal muali dari tab
 */
 @media screen and (max-width:768px) {
   /* styling dirubah disini  */
+  .header {
+    font-size: 10px;
+  }
+  .main-menu {
+  flex-direction: column;
+  align-items: center;
+    
+  }
+  .main-menu li {
+    display: flex;
+    /* border-bottom: 1px solid #aaa; */
+    width: 100%;
+    justify-content: center;
+  }
+  
+ 
+   .main {
+    flex-direction: column-reverse;
+  }
+  .main aside  {
+    width: 400px;
+
+  }
+ .main aside li {
+  text-align: center;
+ }
+/*  karena ada specifity dari yg seblumny ayatiu 
+    .main aside li {
+     ...
+  border-bottom: 1px solid #ccc;
+  maka paling tidak harus ada  root wrapper misal 
+  aside li.last-li 
+  atau smuanya root2nya ditulis!! 
+  .main aside li.last-li  ini wajib! 
+}
+
+*/
+ aside li.last-li {
+   /* font-size: 35px; */
+   border-bottom: none
+ }
+ .main section h2 {
+  text-align: center;
+ }
+ .main section p {
+  text-align: justify;
+ }
 }

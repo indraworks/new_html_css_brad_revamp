@@ -6,4 +6,43 @@
 
 body {
   font-family: Arial, sans-serif;
+  font-size: 18px;
+
 }
+p{
+  padding: 2rem;
+
+}
+main {
+  /* smntra sblum ada <aside kita pakai max-width 
+     tapi stlah ada temanya dalam 1 flex maka kita beri 
+     width 100% 
+     pemberian container-type property adalah salah satu 
+     declare utk container queries! 
+  */
+  container-type: inline-size; /* kalau ada kawan maka kita pakai inline-size   */
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+main p {
+  background: lightgreen;
+ 
+}
+
+/* kita buat container max-width berapa 
+dan element mana tadi yg diseting utk pengaruh dari container tsb
+(dalam hal ini element anak dari cntainer tsb
+
+
+*/
+
+@container (max-width:900px) {
+  main p {
+    background: blue;
+    color:white
+  }
+}
+
+/* stlah ini kuta buat yg asize dab buat itu body dgn flex bagi 2  kri kanan  */

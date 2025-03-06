@@ -79,6 +79,7 @@ nah yg container yg row jadi cloumn jika nnt sentuh patokan misal muali dari tab
   /* styling dirubah disini  */
   .header {
     font-size: 10px;
+    text-align: center;
   }
   .main-menu {
   flex-direction: column;
@@ -97,7 +98,7 @@ nah yg container yg row jadi cloumn jika nnt sentuh patokan misal muali dari tab
     flex-direction: column-reverse;
   }
   .main aside  {
-    width: 400px;
+    width: 100%;
 
   }
  .main aside li {

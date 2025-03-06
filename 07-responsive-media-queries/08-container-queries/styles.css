@@ -5,6 +5,7 @@
 }
 
 body {
+  display: flex;
   font-family: Arial, sans-serif;
   font-size: 18px;
 
@@ -21,7 +22,7 @@ main {
      declare utk container queries! 
   */
   container-type: inline-size; /* kalau ada kawan maka kita pakai inline-size   */
-  max-width: 1100px;
+  width: 100%;
   margin: 30px auto;
   padding: 20px;
 }
@@ -38,6 +39,19 @@ dan element mana tadi yg diseting utk pengaruh dari container tsb
 
 */
 
+/* stlah ini kuta buat yg asize dab buat itu body dgn flex bagi 2  kri kanan  */
+aside {
+  /* grownya 0 shrin 0 dan besaran ocupied 30% dari flex */
+  container-type: inline-size;
+  container-name: aside;
+  flex:0 0 30%;
+  background: #f4f4f4;
+  padding:20px;
+
+
+}
+
+
 @container (max-width:900px) {
   main p {
     background: blue;
@@ -45,4 +59,9 @@ dan element mana tadi yg diseting utk pengaruh dari container tsb
   }
 }
 
-/* stlah ini kuta buat yg asize dab buat itu body dgn flex bagi 2  kri kanan  */
+/* container aside  */
+@container aside (max-width :300px) {
+  aside p {
+    background: lightgreen;
+  }
+}
